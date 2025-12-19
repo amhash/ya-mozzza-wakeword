@@ -1,14 +1,16 @@
 {
   "type": "micro",
-  "wake_word": "ya_mozzza",
+  "wake_word": "Ya Mozzza",
   "author": "amhash",
   "website": "https://github.com/amhash/ya-mozzza-wakeword",
+  "model": "ya_mozzza.tflite",
+  "trained_languages": ["en"],
   "version": 2,
   "micro": {
-    "file": "https://github.com/amhash/ya-mozzza-wakeword/releases/download/v1.0.0/ya_mozzza.tflite",
     "probability_cutoff": 0.5,
+    "feature_step_size": 10,
     "sliding_window_size": 10,
-    "minimum_count": 5,
-    "tensor_arena_size": 45000
+    "tensor_arena_size": 45000,
+    "minimum_esphome_version": "2024.7.0"
   }
 }
